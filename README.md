@@ -8,10 +8,10 @@ What are the endpoints?
 -------------------------------------------
 Assuming you are deploying on your local tomcat running on 8080, you will have the following endpoints:
 
-http://localhost:8080/service/s/start: This starts a new session by logging a hard coded user in. Eventually you will need this to accept username and password in a POST command and definitely over HTTPS.
-http://localhost:8080/service/s/stop: This one ends the user session. After this point the user is not authenticated anymore so the secure services will return a http unauthorized code.
-http://localhost:8080/service/public/hello: This is a public hello service. It will work whether the user is logged in or not.
-http://localhost:8080/service/secure/hello: This is a secure hello service. Unless the user is logged in, it will get a http unauthorized response upon calling.
+* http://localhost:8080/service/s/start: This starts a new session by logging a hard coded user in. Eventually you will need this to accept username and password in a POST command and definitely over HTTPS.
+* http://localhost:8080/service/s/stop: This one ends the user session. After this point the user is not authenticated anymore so the secure services will return a http unauthorized code.
+* http://localhost:8080/service/public/hello: This is a public hello service. It will work whether the user is logged in or not.
+* http://localhost:8080/service/secure/hello: This is a secure hello service. Unless the user is logged in, it will get a http unauthorized response upon calling.
 
 Do I care about server side's session?
 -------------------------------------------
